@@ -2,7 +2,6 @@ package com.robertocursoandroid.caraoucoroa;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -13,7 +12,7 @@ import java.util.Random;
 public class ResultadoActivity extends AppCompatActivity {
 
     private ImageView imageResultado;
-    private Button buttonVoltar;
+    private Button buttonJogar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,10 +20,10 @@ public class ResultadoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_resultado);
 
         imageResultado = findViewById(R.id.imageResultado);
-        buttonVoltar = findViewById(R.id.buttonVoltar);
+        buttonJogar = findViewById(R.id.buttonVoltar);
 
 
-         buttonVoltar.setOnClickListener(new View.OnClickListener() {
+         buttonJogar.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View v) {
 
