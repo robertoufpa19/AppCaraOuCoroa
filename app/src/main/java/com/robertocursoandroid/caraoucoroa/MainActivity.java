@@ -25,12 +25,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent intent = new Intent(getApplicationContext(), ResultadoActivity.class);
-
-                // passar dados para a proxima tela
-                int numero = new Random().nextInt(2);
-
-                intent.putExtra("numero", numero);
-
                 startActivity(intent);
             }
         });
